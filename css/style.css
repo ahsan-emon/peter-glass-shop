@@ -1,0 +1,214 @@
+/* font link  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+}
+header {
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+.header-container {
+  position: relative;
+}
+.header-menu {
+  position: absolute;
+  top: 15px;
+  left: 60px;
+  z-index: 99;
+}
+header .navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .navbar-light .navbar-nav .nav-link:hover,
+header .navbar-light .navbar-nav .nav-link:focus {
+  color: #f3bd01;
+}
+.header-slider-img {
+  transition: 0.4s all ease-in-out;
+}
+.header-slider-img:hover {
+  transform: scale(1.1);
+}
+header .owl-nav .owl-prev i {
+  font-size: 30px;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
+}
+header:hover .owl-nav .owl-prev i {
+  left: 20px;
+  opacity: 1;
+  transition: 0.4s all ease-in-out;
+}
+header .owl-nav .owl-prev i:hover {
+  background-color: #ffc446;
+  color: #000;
+}
+header .owl-nav .owl-next i {
+  font-size: 30px;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
+}
+header:hover .owl-nav .owl-next i {
+  margin-right: 20px;
+  opacity: 1;
+  transition: 0.4s all ease-in-out;
+}
+header .owl-nav .owl-next i:hover {
+  background-color: #ffc446;
+  color: #000;
+}
+header .logo {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 99;
+}
+.header-slider {
+  position: relative;
+}
+.header-slider-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-slider-1 h5 {
+  font-size: 28px;
+  font-style: italic;
+  color: #ffbc1b;
+  margin-bottom: 15px;
+}
+.header-slider-1 h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.header-slider-1 .shop-now-btn {
+  text-decoration: none;
+  color: #161616d9;
+  background: #ffbc1b;
+  padding: 12px 25px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+/* main start  */
+.main-section {
+  background-color: #eeeeee;
+}
+/* fashion items  */
+.fashion-item {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.fashion-item h6 {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  color: #161616;
+  margin-top: 15px;
+  transition: 0.4s all ease-in-out;
+}
+.fashion-item p {
+  font-size: 16px;
+  font-style: italic;
+}
+.fashion-item .fashion-img {
+  transition: 0.4s all ease-in-out;
+  position: relative;
+}
+.fashion-item .fashion-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 9px,
+    transparent 10px,
+    rgba(0, 0, 0, 0.2) 28px
+  );
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+.fashion-item .fashion-img:hover::after {
+  opacity: 1;
+}
+.fashion-item:hover .fashion-img {
+  transform: scale(1.04);
+}
+.fashion-item:hover h6 {
+  color: #f3bd01;
+}
+/* trending products  */
+.trending-products ul li {
+  background-color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+  padding: 12px 25px;
+  color: #161616;
+  transition: 0.4s all ease-in-out;
+  position: relative;
+  z-index: 0;
+  outline: none;
+  border: none;
+}
+.trending-products ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #f3bd01;
+  transition: 0.4s all ease-in-out;
+  z-index: -1;
+}
+.trending-products ul li:hover::after {
+  height: 100%;
+}
