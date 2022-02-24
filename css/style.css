@@ -513,9 +513,38 @@ header .logo {
   font-size: 17px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.service-one {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.service-two {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+.service-three {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 4s; /* don't forget to set a duration! */
+}
+.service-four {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
+}
 /* client section  */
 .client-section {
   padding: 50px 0;
+  overflow: hidden;
 }
 .client-section h1 {
   color: #000;
@@ -621,6 +650,7 @@ header .logo {
 /* stylish section  */
 .stylish-section {
   padding: 50px 0;
+  overflow: hidden;
 }
 .stylish-box {
   position: relative;
