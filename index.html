@@ -80,26 +80,26 @@
       <section class="company-logo py-5">
           <div class="container">
             <div class="owl-carousel brand-carousel">
-              <div class="">
-                <img class="img-fluid w-75" src="images/brand-logo-1.png" alt="">
+              <div class="brand-logo">
+                <img class="img-fluid w-50" src="images/brand-logo-1.png" alt="">
               </div>
-              <div class="">
-                <img class="img-fluid w-75" src="images/brand-logo-2.png" alt="">
+              <div class="brand-logo">
+                <img class="img-fluid w-50" src="images/brand-logo-2.png" alt="">
               </div>
-              <div class="">
-                <img class="img-fluid w-75" src="images/brand-logo-3.png" alt="">
+              <div class="brand-logo">
+                <img class="img-fluid w-50" src="images/brand-logo-3.png" alt="">
               </div>
-              <div class="">
-                <img class="img-fluid w-75" src="images/brand-logo-4.png" alt="">
+              <div class="brand-logo">
+                <img class="img-fluid w-50" src="images/brand-logo-4.png" alt="">
               </div>
-              <div class="">
-                <img class="img-fluid w-75" src="images/brand-logo-5.png" alt="">
+              <div class="brand-logo">
+                <img class="img-fluid w-50" src="images/brand-logo-5.png" alt="">
               </div>
-              <div class="">
-                <img class="img-fluid w-75" src="images/brand-logo-6.png" alt="">
+              <div class="brand-logo">
+                <img class="img-fluid w-50" src="images/brand-logo-6.png" alt="">
               </div>
-              <div class="">
-                <img class="img-fluid w-75" src="images/brand-logo-7.png" alt="">
+              <div class="brand-logo">
+                <img class="img-fluid w-50" src="images/brand-logo-7.png" alt="">
               </div>
             </div>
           </div>
@@ -133,25 +133,545 @@
         </div>
       </section>
       <!-- trending products  -->
-      <section class="trending-products pb-5">
+      <section class="trending-products">
         <div class="container">
           <div class="row text-center pb-4">
             <div class="col">
               <h1 class="fst-italic fw-bold">Trending Product</h1>
             </div>
           </div>
-          <div class="row">
+          <div class="row trending-products-menu pb-5">
             <div class="col">
               <ul class="list-unstyled d-flex justify-content-center">
-                <li class="btn">Sale Products</li>
-                <li class="btn">Featured Products</li>
-                <li class="btn">Best Selling</li>
+                <li><button class="btn" type="button" data-filter=".sale-product">Sale Products</button></li>
+                <li><button class="btn" type="button" data-filter=".feature-product">Featured Products</button></li>
+                <li><button class="btn" type="button" data-filter=".best-selling">Best Selling</button></li>
               </ul>
+            </div>
+          </div>
+          <div class="owl-carousel product-carousel mixCont pb-5">
+            <div class="mix all feature-product sale-product">
+              <div class="product-item">
+                <div class="product-text">
+                  <p>New</p>
+                </div>
+                <div class="product-options">
+                  <ul class="d-flex justify-content-around">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-eye"></i></li>
+                  </ul>
+                </div>
+                <img class="img-fluid" src="images/glass-1.jpg" alt="">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Fugiat Olutas Nulla</h5>
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="far fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-offer-price">
+                    <h4>$180.00</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-text">
+                  <p>New</p>
+                </div>
+                <div class="product-options">
+                  <ul class="d-flex justify-content-around">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-eye"></i></li>
+                  </ul>
+                </div>
+                <img class="img-fluid" src="images/glass-2.jpg" alt="">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Fugiat Olutas Nulla</h5>
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="far fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-offer-price">
+                    <h4>$180.00</h4>
+                    <h6>-20% <del>$225.00</del></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix all sale-product feature-product">
+              <div class="product-item">
+                <div class="product-text">
+                  <p>New</p>
+                  <p>Sale</p>
+                </div>
+                <div class="product-options">
+                  <ul class="d-flex justify-content-around">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-eye"></i></li>
+                  </ul>
+                </div>
+                <img class="img-fluid" src="images/glass-3.jpg" alt="">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Fugiat Olutas Nulla</h5>
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="far fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-offer-price">
+                    <h4>$180.00</h4>
+                    <h6>-20% <del>$225.00</del></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-text">
+                  <p>New</p>
+                </div>
+                <div class="product-options">
+                  <ul class="d-flex justify-content-around">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-eye"></i></li>
+                  </ul>
+                </div>
+                <img class="img-fluid" src="images/glass-5.jpg" alt="">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Fugiat Olutas Nulla</h5>
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="far fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-offer-price">
+                    <h4>$180.00</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix all sale-product best-selling">
+              <div class="product-item">
+                <div class="product-text">
+                  <p>New</p>
+                  <p>Sale</p>
+                </div>
+                <div class="product-options">
+                  <ul class="d-flex justify-content-around">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-eye"></i></li>
+                  </ul>
+                </div>
+                <img class="img-fluid" src="images/glass-6.jpg" alt="">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Fugiat Olutas Nulla</h5>
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="far fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-offer-price">
+                    <h4>$200.00</h4>
+                    <h6>-9% <del>$220.00</del></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-text">
+                  <p>New</p>
+                </div>
+                <div class="product-options">
+                  <ul class="d-flex justify-content-around">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-eye"></i></li>
+                  </ul>
+                </div>
+                <img class="img-fluid" src="images/glass-7.jpg" alt="">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Fugiat Olutas Nulla</h5>
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="far fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-offer-price">
+                    <h4>$180.00</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mix all best-selling sale-product">
+              <div class="product-item">
+                <div class="product-text">
+                  <p>New</p>
+                  <p>Sale</p>
+                </div>
+                <div class="product-options">
+                  <ul class="d-flex justify-content-around">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-eye"></i></li>
+                  </ul>
+                </div>
+                <img class="img-fluid" src="images/glass-8.jpg" alt="">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Fugiat Olutas Nulla</h5>
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="far fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-offer-price">
+                    <h4>$200.00</h4>
+                    <h6>-9% <del>$220.00</del></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-text">
+                  <p>New</p>
+                </div>
+                <div class="product-options">
+                  <ul class="d-flex justify-content-around">
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-eye"></i></li>
+                  </ul>
+                </div>
+                <img class="img-fluid" src="images/glass-9.jpg" alt="">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Fugiat Olutas Nulla</h5>
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="far fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                  <div class="product-offer-price">
+                    <h4>$180.00</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- company info  -->
+      <section class="company-info">
+        <div class="container">
+          <div class="owl-carousel founder-carousel">
+            <div>
+              <div class="text-center">
+                <img class="img-fluid" src="images/profile.png" alt="">
+                <h6>Md. Ahsan Ullah Emon</h6>
+                <h5>CEO & Founder</h5>
+                <span class="founder-underline"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita laboriosam eos enim quasi et provident perferendis officiis dolore fugiat alias. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-center">
+                <div>
+                  <img class="img-fluid" src="images/profile.png" alt="">
+                </div>
+                <h6>Md. Ahsan Ullah Emon</h6>
+                <h5>CEO & Founder</h5>
+                <span class="founder-underline"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita laboriosam eos enim quasi et provident perferendis officiis dolore fugiat alias. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-center">
+                <img class="img-fluid" src="images/profile.png" alt="">
+                <h6>Md. Ahsan Ullah Emon</h6>
+                <h5>CEO & Founder</h5>
+                <span class="founder-underline"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita laboriosam eos enim quasi et provident perferendis officiis dolore fugiat alias. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services section  -->
+      <section class="services-info">
+        <div class="container">
+          <div class="owl-carousel service-carousel">
+            <div class="service-details service-border-line">
+              <i class="fas fa-rocket"></i>
+              <h5>Worldwide Delivery</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service-details service-border-line">
+              <i class="fab fa-whatsapp"></i>
+              <h5>24x7 Support</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service-details service-border-line">
+              <i class="fas fa-gift"></i>
+              <h5>Gift Vouchers</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service-details">
+              <i class="fas fa-piggy-bank"></i>
+              <h5>Great Savings</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- client section  -->
+      <section class="client-section">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6">
+              <h1>Un Nouveau <br>Regard</h1>
+              <button class="btn client-shop-btn">Shop Now</button>
+              <div class="client-img-left mt-5">
+                <div class="client-img">
+                  <img class="img-fluid" src="images/aboutus-01.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="client-img-right">
+                <div class="client-img">
+                  <img class="img-fluid" src="images/aboutus-02.jpg" alt="">
+                </div>
+              </div>
+              <h1 class="client-right-text"><span class="quotation">"</span>La Fashion Est Le Tbeatre De Notre Intinite.<span class="quotation">"</span></h1>
+              <button class="btn client-shop-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- stylish section  -->
+      <section class="stylish-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="stylish-box">
+                <img class="img-fluid" src="images/banner-01.jpg" alt="">
+              <div class="stylish-text-left">
+                <h2>Stylish Shop</h2>
+                <h5>Sale flat 50% off</h5>
+                <a class="btn stylish-shop-btn" href="">Shop Now</a>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="stylish-box">
+                <img class="img-fluid" src="images/banner-02.jpg" alt="">
+              <div class="stylish-text-right">
+                <h2>Be Stylus</h2>
+                <h5>Sale on big brands</h5>
+                <a class="btn stylish-shop-btn" href="">Shop Now</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- latest news  -->
+      <section class="latest-news">
+        <div class="container">
+          <div class="row text-center pb-5">
+            <div class="col">
+              <h1>Latest News</h1>
+            </div>
+          </div>
+          <div class="owl-carousel latest-carousel">
+            <div class="">
+              <div class="latest-box pb-5">
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="latest-img">
+                  <img class="img-fluid" src="images/news-1.jpg" alt="">
+                </div>
+                <div class="latest-news-text">
+                  <h6>Cras Veslibulum Sem</h6>
+                  <div class="d-flex justify-content-between">
+                    <a href="">Read more <i class="fas fa-angle-right"></i></a>
+                    <ul class="list-unstyled d-flex">
+                      <li><i class="fas fa-calendar-day"></i></li>
+                      <li>July 17. 2021</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="latest-box">
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="latest-img">
+                  <img class="img-fluid" src="images/news-2.jpg" alt="">
+                </div>
+                <div class="latest-news-text">
+                  <h6>Cras Veslibulum Sem</h6>
+                  <div class="d-flex justify-content-between">
+                    <a href="">Read more <i class="fas fa-angle-right"></i></a>
+                    <ul class="list-unstyled d-flex">
+                      <li><i class="fas fa-calendar-day"></i></li>
+                      <li>July 17. 2021</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="latest-box">
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="latest-img">
+                  <img class="img-fluid" src="images/news-3.jpg" alt="">
+                </div>
+                <div class="latest-news-text">
+                  <h6>Cras Veslibulum Sem</h6>
+                  <div class="d-flex justify-content-between">
+                    <a href="">Read more <i class="fas fa-angle-right"></i></a>
+                    <ul class="list-unstyled d-flex">
+                      <li><i class="fas fa-calendar-day"></i></li>
+                      <li>July 17. 2021</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="latest-box">
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="latest-img">
+                  <img class="img-fluid" src="images/news-4.jpg" alt="">
+                </div>
+                <div class="latest-news-text">
+                  <h6>Cras Veslibulum Sem</h6>
+                  <div class="d-flex justify-content-between">
+                    <a href="">Read more <i class="fas fa-angle-right"></i></a>
+                    <ul class="list-unstyled d-flex">
+                      <li><i class="fas fa-calendar-day"></i></li>
+                      <li>July 17. 2021</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="latest-box">
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="latest-img">
+                  <img class="img-fluid" src="images/news-5.jpg" alt="">
+                </div>
+                <div class="latest-news-text">
+                  <h6>Cras Veslibulum Sem</h6>
+                  <div class="d-flex justify-content-between">
+                    <a href="">Read more <i class="fas fa-angle-right"></i></a>
+                    <ul class="list-unstyled d-flex">
+                      <li><i class="fas fa-calendar-day"></i></li>
+                      <li>July 17. 2021</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- footer start  -->
+    <footer>
+      <div class="container">
+        <div class="row gy-4 pb-4">
+          <div class="col-md-3">
+            <img class="img-fluid" src="images/logo-02_220x.png" alt="">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus, duis faucibus enim vitae</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Our Company</h4>
+            <ul class="list-unstyled">
+              <li><a href=""><i class="fas fa-angle-right"></i> Search</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> Blog</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> Faq's</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> Collection</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Products</h4>
+            <ul class="list-unstyled">
+              <li><a href=""><i class="fas fa-angle-right"></i> Contact Us</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> Terms & Conditions</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> Legal Notice</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> Delivery</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> About Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Store Information</h4>
+            <ul class="list-unstyled contact-details">
+              <li><i class="fas fa-map-marker-alt"></i> My Company, 42 Puffin Street 12345 Puffinville France</li>
+              <li><a href="tel:0123-456-789"><i class="fas fa-phone-alt"></i> 0123-456-789</a></li>
+              <li><a href="mailto:sales@gmail.com"><i class="fas fa-envelope"></i> sales@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-between footer-signup-bg ">
+          <div class="col">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2><i class="fas fa-paper-plane"></i> Sign Up For Newsletter</h2>
+            </div>
+          </div>
+          <div class="col">
+            <div class="email-feild">
+              <input type="email" placeholder="email@example.com">
+              <button class="btn subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- main jquery cdn link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -159,6 +679,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- fontawesome link  -->
     <script src="https://kit.fontawesome.com/20bb288a86.js" crossorigin="anonymous"></script>
+    <!-- mixitup  -->
+    <script src="js/mixitup.min.js"></script>
+    <script>
+      // config mixitup 
+      var mixer = mixitup('.mixCont');
+    </script>
     <!-- owl carousel link  -->
     <script src="js/owl.carousel.min.js"></script>
     <script>
@@ -201,6 +727,53 @@
             autoplayHoverPause: false,
             nav: false,
             dots: false,
+        });
+        });
+        // product carousel 
+        $(document).ready(function(){
+        $(".product-carousel").owlCarousel({
+            items: 3,
+            margin: 50,
+            smartSpeed: 1000,
+            nav: true,
+            dots: false,
+            navText: ["<a><i class='fas fa-angle-left'></i>PREV</a>","<a>NEXT<i class='fas fa-angle-right'></i></a>"],
+        });
+        });
+        // founder carousel 
+        $(document).ready(function(){
+        $(".founder-carousel").owlCarousel({
+          items: 1,
+            margin: 50,
+            loop: true,
+            autoplay: true,
+            smartSpeed: 1000,
+            autoplayHoverPause: false,
+            nav: false,
+            dots: true,
+        });
+        });
+        // service carousel 
+        $(document).ready(function(){
+        $(".service-carousel").owlCarousel({
+            items: 4,
+            margin: 30,
+            smartSpeed: 1000,
+            autoplayHoverPause: false,
+            nav: false,
+            dots: false,
+        });
+        });
+        // latest carousel 
+        $(document).ready(function(){
+        $(".latest-carousel").owlCarousel({
+            items: 3,
+            margin: 30,
+            smartSpeed: 1000,
+            autoplayHoverPause: false,
+            nav: true,
+            dots: false,
+            navText: ["<a><i class='fas fa-angle-left'></i>PREV</a>","<a>NEXT<i class='fas fa-angle-right'></i></a>"],
         });
         });
     </script>
