@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- main css  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- media css -->
+    <link rel="stylesheet" href="css/media.css">
     
   </head>
   <body>
@@ -23,10 +25,10 @@
           <nav class="navbar navbar-expand-lg navbar-light header-menu">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="text-white"><i class="fas fa-bars"></i></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
@@ -485,7 +487,7 @@
       <!-- stylish section  -->
       <section class="stylish-section">
         <div class="container">
-          <div class="row">
+          <div class="row gy-4">
             <div class="col-md-6 wow fadeInLeft">
               <div class="stylish-box">
                 <img class="img-fluid" src="images/banner-01.jpg" alt="">
@@ -625,7 +627,7 @@
     <!-- footer start  -->
     <footer>
       <div class="container">
-        <div class="row gy-4 pb-4  wow fadeInUp">
+        <div class="row gy-4 pb-4 wow fadeInUp">
           <div class="col-md-3">
             <img class="img-fluid" src="images/logo-02_220x.png" alt="">
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus, duis faucibus enim vitae</p>
@@ -659,13 +661,13 @@
             </ul>
           </div>
         </div>
-        <div class="row justify-content-between footer-signup-bg  wow fadeInUp">
-          <div class="col">
-            <div class="d-flex justify-content-between align-items-center">
+        <div class="row gy-4 justify-content-between footer-signup-bg  wow fadeInUp">
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-md-center align-items-center">
               <h2><i class="fas fa-paper-plane"></i> Sign Up For Newsletter</h2>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-6">
             <div class="email-feild">
               <input type="email" placeholder="email@example.com">
               <button class="btn subscribe-btn">Subscribe</button>
@@ -710,7 +712,6 @@
         // brand carousel 
         $(document).ready(function(){
         $(".brand-carousel").owlCarousel({
-            items: 5,
             margin: 0,
             loop: true,
             autoplay: true,
@@ -718,12 +719,23 @@
             autoplayHoverPause: false,
             nav: false,
             dots: false,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:3,
+                },
+                576:{
+                    items:4,
+                },
+                768:{
+                    items:5,
+                }
+            }
         });
         });
         // fashion carousel 
         $(document).ready(function(){
         $(".fashion-carousel").owlCarousel({
-            items: 3,
             margin: 20,
             loop: true,
             autoplay: true,
@@ -731,17 +743,37 @@
             autoplayHoverPause: false,
             nav: false,
             dots: false,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:2,
+                },
+                576:{
+                    items:3,
+                }
+            }
         });
         });
         // product carousel 
         $(document).ready(function(){
         $(".product-carousel").owlCarousel({
-            items: 3,
             margin: 50,
             smartSpeed: 1000,
             nav: true,
             dots: false,
             navText: ["<a><i class='fas fa-angle-left'></i>PREV</a>","<a>NEXT<i class='fas fa-angle-right'></i></a>"],
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                425:{
+                    items:2,
+                },
+                768:{
+                    items:3,
+                }
+            }
         });
         });
         // founder carousel 
@@ -760,24 +792,46 @@
         // service carousel 
         $(document).ready(function(){
         $(".service-carousel").owlCarousel({
-            items: 4,
             margin: 30,
             smartSpeed: 1000,
             autoplayHoverPause: false,
             nav: false,
             dots: false,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:2,
+                },
+                425:{
+                    items:3,
+                },
+                768:{
+                    items:4,
+                }
+            }
         });
         });
         // latest carousel 
         $(document).ready(function(){
         $(".latest-carousel").owlCarousel({
-            items: 3,
             margin: 30,
             smartSpeed: 1000,
             autoplayHoverPause: false,
             nav: true,
             dots: false,
             navText: ["<a><i class='fas fa-angle-left'></i>PREV</a>","<a>NEXT<i class='fas fa-angle-right'></i></a>"],
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                576:{
+                    items:2,
+                },
+                992:{
+                  items:3,
+                }
+            }
         });
         });
 

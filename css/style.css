@@ -337,10 +337,13 @@ header .logo {
   font-style: italic;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+.trending-products .owl-carousel .owl-nav {
+  position: relative;
+}
 .trending-products .owl-carousel .owl-nav button.owl-prev a {
   font-style: italic;
   position: absolute;
-  bottom: 0px;
+  bottom: -40px;
   left: 45%;
   transform: translateX(-50%);
   font-size: 18px;
@@ -367,7 +370,7 @@ header .logo {
 .trending-products .owl-carousel .owl-nav button.owl-next a {
   font-style: italic;
   position: absolute;
-  bottom: -30px;
+  bottom: -70px;
   right: 45%;
   transform: translateX(-50%);
   color: #777;
@@ -809,6 +812,9 @@ header .logo {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
   transition: 0.4s all ease-in-out;
+}
+.latest-news .owl-carousel .owl-nav {
+  position: relative;
 }
 .latest-news .owl-carousel .owl-nav button.owl-prev a::after {
   content: "";
