@@ -929,7 +929,7 @@ footer .contact-details li {
 }
 .subscribe-btn {
   position: absolute;
-  top: 0;
+  bottom: 2px;
   right: 0;
   color: #222;
   text-transform: uppercase;
